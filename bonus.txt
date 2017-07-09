@@ -1,0 +1,34 @@
+Watch and Code is a phenomenal set of JavaScript Tutorial. One of the best we've ever seen. You will be using the Practical JavaScript tutorial. Head on over to https://watchandcode.com, create an account and start working on Lesson 1, or what they call Version 1 - Arrays. Once complete, create a repo and main folder titled CareerDevsWnC, push your code to github with a commit message that contains the lesson name and share the link below.
+
+To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program. Also create a new branch that contains a commit message re: your upgraded code. Push everything to github and share. Happy coding.
+
+
+// ************** upgraded code below **************
+
+I upgraded the basic version of the program by adding console.log() after each line of the program, to display the results of each line that adds, changes or deletes an item in the array.
+
+so now my program looks like this:
+
+// store todos
+var todos = ['item1','item2','item3'];
+
+// display todos
+console.log('My todos:', todos);
+
+// add new todos
+todos.push('item 4');
+console.log('My todos:', todos);
+todos.push('item 5');
+console.log('My todos:', todos);
+todos.push('new todo');
+console.log('My todos:', todos);
+
+// changing the first item
+todos[0] = 'item 1 updated';
+console.log('My todos:', todos);
+todos[0] = 'changed!';
+console.log('My todos:', todos);
+
+// Deleteing the first item
+todos.splice(0,1);
+console.log('My todos:', todos);
