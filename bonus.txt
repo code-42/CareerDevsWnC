@@ -1,0 +1,4 @@
+To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program. Also create a new branch that contains a commit message re: your upgraded code. Push everything to github and share. Happy coding.
+
+BONUS:
+In version 3, we upgraded the basic version of the program by moving the todo functions from version2 onto the object.
