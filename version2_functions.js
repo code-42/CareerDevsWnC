@@ -90,3 +90,25 @@ changeTodo(0, 'changed')
 displayTodos()
 // VM76:2 My todos: (7) ["changed", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
 
+changeTodo(0, 'changed again')
+// VM76:2 My todos: (7) ["changed again", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
+
+function deleteTodo(position){
+    todos.splice(position,1);
+    displayTodos();
+}
+
+deleteTodo(0)
+
+// VM76:2 My todos: (6) ["item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
+
+deleteTodo(0)
+// VM76:2 My todos: (5) ["item 3", "new todo", "new todo", "new todo", "hello there"]
+
+deleteTodo(2)
+// VM76:2 My todos: (4) ["item 3", "new todo", "new todo", "hello there"]
+
+deleteTodo(2)
+// VM76:2 My todos: (3) ["item 3", "new todo", "hello there"]
+
+
