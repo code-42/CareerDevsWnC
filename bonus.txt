@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program. Also create a new branch that contains a commit message re: your upgraded code. Push everything to github and share. Happy coding.
 
 BONUS:
@@ -6,3 +7,13 @@ In version 2, we upgraded the basic version of the program by writing functions 
 =======
 In version 3, we upgraded the basic version of the program by moving the todo functions from version2 onto the object.
 >>>>>>> v3
+=======
+To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program.
+
+
+In version 4, we changed the structure of the todo array to be an array of objects, rather than an array of text.
+
+Next we modified the changeTodo method so that it only changed the todo text properites on each todo object.
+
+And last, we learned about booleans and how to make the opposite of a boolean value in the toggleCompleted method
+>>>>>>> v4-booleans
