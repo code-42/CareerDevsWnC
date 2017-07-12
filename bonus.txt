@@ -1,0 +1,8 @@
+To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program.
+
+
+In version 4, we changed the structure of the todo array to be an array of objects, rather than an array of text.
+
+Next we modified the changeTodo method so that it only changed the todo text properites on each todo object.
+
+And last, we learned about booleans and how to make the opposite of a boolean value in the toggleCompleted method
