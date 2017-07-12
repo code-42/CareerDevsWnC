@@ -96,3 +96,32 @@ var todoList = {
 todoList.changeTodo(0,'first');
 VM2407 script.js:1 My Todos (3) ["first", "item 2", "item 3"]
 undefined
+
+// it should have a deleteTodo method
+// moved the deleteTodos() function onto the object
+var todoList = {
+  todos: ['item 1', 'item 2', 'item 3'],
+  displayTodos: function(){
+    console.log('My Todos', this.todos);
+  },
+  addTodo: function(todo){
+    this.todos.push(todo);
+    this.displayTodos();
+  },
+  changeTodo: function(position, newValue){
+    this.todos[position] = newValue;
+    this.displayTodos();
+  },
+  deleteTodo: function(position){
+    this.todos.splice(position,1);
+    this.displayTodos();
+  }
+};
+
+// run it
+todoList.displayTodos();
+VM2407 script.js:1 My Todos (3) ["item 1", "item 2", "item 3"]
+undefined
+todoList.deleteTodo(1);
+VM2407 script.js:1 My Todos (2) ["item 1", "item 3"]
+
