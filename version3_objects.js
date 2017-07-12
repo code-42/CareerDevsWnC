@@ -37,7 +37,23 @@ VM528:4 Gordon
 
 // video @ 4:29 "sayName is a method on the gordon object"
 
+// commit 
 // it should store the todos array on an object
 var todoList = {
   todos: ['item 1', 'item 2', 'item 3']
 };
+
+
+// it should have a function to display todos
+// moved the displayTodos() function onto the object
+var todoList = {
+  todos: ['item 1', 'item 2', 'item 3'],
+  displayTodos: function(){
+    console.log('My Todos', this.todos);
+  }
+};
+
+todoList.displayTodos();
+VM2407 script.js:1 My Todos (3) ["item 1", "item 2", "item 3"]
+undefined
+
