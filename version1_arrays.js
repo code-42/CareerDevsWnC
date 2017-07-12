@@ -29,3 +29,10 @@ console.log('My todos:', todos);
 // Deleteing the first item
 todos.splice(0,1);
 console.log('My todos:', todos);
+
+// make a new branch for this file version1_arrays.js
+// git checkout -b v1
+// git status
+// git add .
+// git commit -m "make a new branch for this file version1_arrays.js"
+// git push
