@@ -25,6 +25,7 @@ function deleteTodo(position){
 }
 */
 
+/*
 // version 3 - moved the todo functions onto the object
 var todoList = {
   todos: ['item 1', 'item 2', 'item 3'],
@@ -44,4 +45,28 @@ var todoList = {
     this.displayTodos();
   }
 };
+*/
 
+// version 4
+// change the addTodo method so it adds objects instead of text to the todos array
+var todoList = {
+  todos: [],
+  displayTodos: function(){
+    console.log('My Todos', this.todos);
+  },
+  addTodo: function(todoText){
+    this.todos.push({
+      todoText: todoText,
+      completed: false
+    });
+    this.displayTodos();
+  },
+  changeTodo: function(position, newValue){
+    this.todos[position] = newValue;
+    this.displayTodos();
+  },
+  deleteTodo: function(position){
+    this.todos.splice(position,1);
+    this.displayTodos();
+  }
+};
