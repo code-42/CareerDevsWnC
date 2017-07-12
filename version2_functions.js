@@ -80,3 +80,13 @@ function addTodo(todo){
 addTodo('hello there')
 // ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
 
+function changeTodo(position, newValue){
+    todos[position] = newValue;
+    displayTodos();
+}
+
+changeTodo(0, 'changed')
+
+displayTodos()
+// VM76:2 My todos: (7) ["changed", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
+
