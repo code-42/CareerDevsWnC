@@ -1,4 +1,5 @@
 /*
+// version 2 - functions 
 var todos = ['item 1', 'item 2', 'item 3']
 
 // it should have a function to display todos
