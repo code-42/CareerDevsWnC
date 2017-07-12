@@ -42,10 +42,41 @@ change todos
 delete todos
 */
 
-var todos = ['item 1', 'item 2', 'item 3' ]
+var todos = ['item 1', 'item 2', 'item 3']
 
 function displayTodos(){
     console.log('My todos:', todos);
 }
 
 displayTodos();
+// My todos: [ 'item 1', 'item 2', 'item 3' ]
+
+function addTodo(){
+    todos.push('new todo');
+    displayTodos();
+}
+
+addTodo();
+// todos
+displayTodos()
+// My todos: [ 'item 1', 'item 2', 'item 3' ]
+// My todos: [ 'item 1', 'item 2', 'item 3', 'new todo' ]
+
+// run it one more time
+addTodo();
+// todos
+displayTodos()
+// My todos: [ 'item 1', 'item 2', 'item 3' ]
+// My todos: [ 'item 1', 'item 2', 'item 3', 'new todo' ]
+// My todos: [ 'item 1', 'item 2', 'item 3', 'new todo', 'new todo' ]
+// My todos: (6) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo"]
+
+
+function addTodo(todo){
+    todos.push(todo);
+    displayTodos();
+}
+
+addTodo('hello there')
+// ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
+
