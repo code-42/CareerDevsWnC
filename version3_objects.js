@@ -37,3 +37,7 @@ VM528:4 Gordon
 
 // video @ 4:29 "sayName is a method on the gordon object"
 
+// it should store the todos array on an object
+var todoList = {
+  todos: ['item 1', 'item 2', 'item 3']
+};
