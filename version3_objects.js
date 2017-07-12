@@ -57,3 +57,19 @@ todoList.displayTodos();
 VM2407 script.js:1 My Todos (3) ["item 1", "item 2", "item 3"]
 undefined
 
+// it should have an addTodo method
+// moved the addTodos() function onto the object
+var todoList = {
+  todos: ['item 1', 'item 2', 'item 3'],
+  displayTodos: function(){
+    console.log('My Todos', this.todos);
+  },
+  addTodo: function(todo){
+    this.todos.push(todo);
+    this.displayTodos();
+  }
+};
+
+// run it
+todoList.addTodo('plunker');
+VM2407 script.js:1 My Todos (4) ["item 1", "item 2", "item 3", "plunker"]
