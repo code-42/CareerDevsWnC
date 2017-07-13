@@ -23,4 +23,56 @@ for (var i=0; i < testArray.length; i++){
     console.log(testArray[i]);
 }
 
+// v5 requirements
+// .displayTodos should show .todoText
+// .displayTodos should tell you if .todos is empty
+// .displayTodos should show .completed
+
+// .displayTodos should show .todoText
+// change the addTodo method so it adds objects instead of text to the todos array
+var todoList = {
+  todos: [],
+  displayTodos: function(){
+    console.log('My Todos:');
+    for(var i = 0; i < this.todos.length; i++){
+        console.log(this.todos[i].todoText);
+    }
+  },
+  addTodo: function(todoText){
+    this.todos.push({
+      todoText: todoText,
+      completed: false
+    });
+    this.displayTodos();
+  },
+// change parameter newValue to todoText
+  changeTodo: function(position, todoText){
+// change this.todos[position] = newValue; to a property on the object
+    this.todos[position].todoText = todoText;
+    this.displayTodos();
+  },  
+  deleteTodo: function(position){
+    this.todos.splice(position,1);
+    this.displayTodos();
+  }
+};
+
+todoList.addTodo('first');
+todoList.addTodo('second');
+
+// code42:~/workspace/CareerDevsWnC (v5-loopsoflogic) $ node version5_loopsoflogic.js 
+// hey
+// hey
+// hey
+// item 1
+// item 2
+// item 3
+// My Todos [ { todoText: 'first', completed: false } ]
+// first
+// My Todos [ { todoText: 'first', completed: false },
+//   { todoText: 'second', completed: false } ]
+// first
+// second
+// code42:~/workspace/CareerDevsWnC (v5-loopsoflogic) $ 
+
 
