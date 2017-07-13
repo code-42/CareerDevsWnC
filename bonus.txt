@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program. Also create a new branch that contains a commit message re: your upgraded code. Push everything to github and share. Happy coding.
 
 BONUS:
@@ -17,3 +18,9 @@ Next we modified the changeTodo method so that it only changed the todo text pro
 
 And last, we learned about booleans and how to make the opposite of a boolean value in the toggleCompleted method
 >>>>>>> v4-booleans
+=======
+To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program.
+
+version 1 BONUS:
+I upgraded the basic version of the program by adding console.log() after each operation to show the output on c9 terminal.
+>>>>>>> v1
