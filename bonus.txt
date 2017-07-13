@@ -15,13 +15,4 @@ In version 3, we upgraded the basic version of the program by moving the todo fu
 In version 4, we changed the structure of the todo array to be an array of objects, rather than an array of text.
 Next we modified the changeTodo method so that it only changed the todo text properites on each todo object.
 And last, we learned about booleans and how to make the opposite of a boolean value in the toggleCompleted method
-<<<<<<< HEAD
->>>>>>> v4-booleans
-=======
-To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program.
 
-version 1 BONUS:
-I upgraded the basic version of the program by adding console.log() after each operation to show the output on c9 terminal.
->>>>>>> v1
-=======
->>>>>>> 91a10ceb449111cdf97b5c13ee0a9ba69a4bfe84
