@@ -50,7 +50,7 @@ var todoList = {
   }
 };
 */
-<<<<<<< HEAD
+
 
 // version 4 - booleans
 // todoList.toggleCompleted should flip the completed property
@@ -85,6 +85,7 @@ var todoList = {
       this.displayTodos();
   }
 };
+<<<<<<< HEAD
 =======
 >>>>>>> v4-booleans
 =======
@@ -113,3 +114,5 @@ var todoList = {
     this.displayTodos();
   }
 };
+=======
+>>>>>>> 91a10ceb449111cdf97b5c13ee0a9ba69a4bfe84
