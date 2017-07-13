@@ -1,6 +1,7 @@
 To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program. Also create a new branch that contains a commit message re: your upgraded code. Push everything to github and share. Happy coding.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 BONUS:
 In version 1, I upgraded the basic version of the program by adding console.log() after each line of the program, to display the results of each line that adds, changes or deletes an item in the array.
 
@@ -13,13 +14,18 @@ Next we modified the changeTodo method so that it only changed the todo text pro
 And last, we learned about booleans and how to make the opposite of a boolean value in the toggleCompleted method
 
 =======
+=======
+>>>>>>> v2
 version 1 BONUS:
 I upgraded the basic version of the program by adding console.log() after each operation to show the output on c9 terminal.
 
 version 2 BONUS:
 In version 2, we upgraded the basic version of the program by writing functions to display todos, add, change and delete todos.
 
+<<<<<<< HEAD
 version 3 BONUS:
 In version 3, we upgraded the basic version of the program by moving the todo functions from version2 onto the object.
 
 >>>>>>> v3
+=======
+>>>>>>> v2

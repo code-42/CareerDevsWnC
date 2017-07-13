@@ -1,4 +1,5 @@
-/*
+// functions are just recipes
+
 makeTurkeySandwich
     Get one slice of bread.
     Add turkey.
