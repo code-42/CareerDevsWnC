@@ -1,4 +1,5 @@
-/*
+// functions are just recipes
+
 makeTurkeySandwich
     Get one slice of bread.
     Add turkey.
@@ -112,3 +113,43 @@ deleteTodo(2)
 // VM76:2 My todos: (3) ["item 3", "new todo", "hello there"]
 
 
+// Review - last video in version 2
+var todos = ['item 1', 'item 2', 'item 3']
+
+// it should have a function to display todos
+function displayTodos(){
+    console.log('My todos:', todos);
+}
+
+// it should have a function to add todos
+function addTodo(todo){
+    todos.push(todo);
+    displayTodos();
+}
+
+// it should have a function to change todos
+function changeTodo(position, newValue){
+    todos[position] = newValue;
+    displayTodos();
+}
+
+// it should have a function to delete todos
+function deleteTodo(position){
+    todos.splice(position,1);
+    displayTodos();
+}
+
+
+undefined
+displayTodos()
+// VM207:5 My todos: (3) ["item 1", "item 2", "item 3"]
+undefined
+deleteTodo(0)
+// VM207:5 My todos: (2) ["item 2", "item 3"]
+undefined
+changeTodo(0,'item1')
+// VM207:5 My todos: (2) ["item1", "item 3"]
+undefined
+addTodo('last')
+// VM207:5 My todos: (3) ["item1", "item 3", "last"]
+undefined
