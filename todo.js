@@ -61,12 +61,21 @@ var todoList = {
     });
     this.displayTodos();
   },
-  changeTodo: function(position, newValue){
-    this.todos[position] = newValue;
+// change parameter newValue to todoText
+  changeTodo: function(position, todoText){
+// change this.todos[position] = newValue; to a property on the object
+    this.todos[position].todoText = todoText;
     this.displayTodos();
-  },
+  },  
   deleteTodo: function(position){
     this.todos.splice(position,1);
     this.displayTodos();
   }
 };
+
+todoList.addTodo("add first todo");
+todoList.addTodo("add 2nd todo");
+todoList.addTodo("add third todo");
+todoList.changeTodo(1, "change second todo");
+todoList.addTodo("add thth todo");
+todoList.changeTodo(3, "add forrth todo");
