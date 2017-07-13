@@ -1,9 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // functions are just recipes
 
 =======
 /*
 >>>>>>> v4-booleans
+=======
+// functions are just recipes
+
+>>>>>>> v5-loopsoflogic
 makeTurkeySandwich
     Get one slice of bread.
     Add turkey.
@@ -118,6 +123,9 @@ deleteTodo(2)
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> v5-loopsoflogic
 // Review - last video in version 2
 var todos = ['item 1', 'item 2', 'item 3']
 
@@ -158,5 +166,8 @@ undefined
 addTodo('last')
 // VM207:5 My todos: (3) ["item1", "item 3", "last"]
 undefined
+<<<<<<< HEAD
 =======
 >>>>>>> v4-booleans
+=======
+>>>>>>> v5-loopsoflogic
