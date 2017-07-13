@@ -25,12 +25,9 @@ for (var i=0; i < testArray.length; i++){
 
 // v5 requirements
 // .displayTodos should show .todoText
-// .displayTodos should tell you if .todos is empty
-// .displayTodos should show .completed
-
-// .displayTodos should show .todoText
 // change the addTodo method so it adds objects instead of text to the todos array
 // .displayTodos should tell you if .todos is empty
+// .displayTodos should show .completed
 var todoList = {
   todos: [],
   displayTodos: function(){
@@ -39,7 +36,11 @@ var todoList = {
     } else {
         console.log('My Todos:');
         for(var i = 0; i < this.todos.length; i++){
-            console.log(this.todos[i].todoText);
+            if(this.todos[i].completed === true){
+                console.log('(x)', this.todos[i].todoText);
+            } else {
+                console.log('( )', this.todos[i].todoText);
+            }
         }
     }
   },
@@ -59,15 +60,26 @@ var todoList = {
   deleteTodo: function(position){
     this.todos.splice(position,1);
     this.displayTodos();
+  },
+  toggleCompleted: function(position){
+      var todo = this.todos[position];
+      todo.completed = !todo.completed;
+      this.displayTodos();
   }
 };
 
 todoList.displayTodos();
-todoList.addTodo('an item');
+todoList.addTodo('first');
 todoList.deleteTodo();
 // todoList.displayTodos();
 todoList.addTodo('second');
+todoList.addTodo('third');
+todoList.addTodo('fourth');
 // todoList.displayTodos();
+todoList.toggleCompleted(1);
+todoList.toggleCompleted(2);
+
+
 
 // code42:~/workspace/CareerDevsWnC (v5-loopsoflogic) $ node version5_loopsoflogic.js 
 // hey
@@ -82,6 +94,37 @@ todoList.addTodo('second');
 //   { todoText: 'second', completed: false } ]
 // first
 // second
+// code42:~/workspace/CareerDevsWnC (v5-loopsoflogic) $ 
+
+
+// code42:~/workspace/CareerDevsWnC (v5-loopsoflogic) $ node version5_loopsoflogic.js 
+// hey
+// hey
+// hey
+// item 1
+// item 2
+// item 3
+// Your todo list is empty
+// My Todos:
+// ( ) first
+// Your todo list is empty
+// My Todos:
+// ( ) second
+// My Todos:
+// ( ) second
+// ( ) third
+// My Todos:
+// ( ) second
+// ( ) third
+// ( ) fourth
+// My Todos:
+// ( ) second
+// (x) third
+// ( ) fourth
+// My Todos:
+// ( ) second
+// (x) third
+// (x) fourth
 // code42:~/workspace/CareerDevsWnC (v5-loopsoflogic) $ 
 
 

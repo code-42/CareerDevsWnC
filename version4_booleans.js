@@ -23,27 +23,27 @@ var todoList = {
 };
 
 // run it
-todoList.addTodo('this is an object');
-VM2407 script.js:1 My Todos 
-[Object]
-0
-:
-Object
-completed
-:
-false
-todoText
-:
-"this is an object"
-__proto__
-:
-Object
-length
-:
-1
-__proto__
-:
-Array(0)
+// todoList.addTodo('this is an object');
+// // VM2407 script.js:1 My Todos 
+// [Object]
+// 0
+// 
+// Object
+// completed
+// :
+// false
+// todoText
+// :
+// "this is an object"
+// __proto__
+// :
+// Object
+// length
+// :
+// 1
+// __proto__
+// :
+// Array(0)
 
 
 // todoList.changeTodo should change the todoText property
@@ -72,49 +72,49 @@ var todoList = {
 };
 
 // run it
-todoList.addTodo('first try');
-VM2407 script.js:1 My Todos 
-[Object]
-0
-:
-Object
-completed
-:
-false
-todoText
-:
-"first try"
-__proto__
-:
-Object
-length
-:
-1
-__proto__
-:
-Array(0)
-undefined
-todoList.changeTodo(0,'second try');
-VM2407 script.js:1 My Todos 
-[Object]
-0
-:
-Object
-completed
-:
-false
-todoText
-:
-"second try"
-__proto__
-:
-Object
-length
-:
-1
-__proto__
-:
-Array(0)
+// todoList.addTodo('first try');
+// VM2407 script.js:1 My Todos 
+// [Object]
+// 0
+// :
+// Object
+// completed
+// :
+// false
+// todoText
+// :
+// "first try"
+// __proto__
+// :
+// Object
+// length
+// :
+// 1
+// __proto__
+// :
+// Array(0)
+// undefined
+// todoList.changeTodo(0,'second try');
+// VM2407 script.js:1 My Todos 
+// [Object]
+// 0
+// :
+// Object
+// completed
+// :
+// false
+// todoText
+// :
+// "second try"
+// __proto__
+// :
+// Object
+// length
+// :
+// 1
+// __proto__
+// :
+// Array(0)
 
 
 // todoList.toggleCompleted should flip the completed property
@@ -153,46 +153,46 @@ var todoList = {
 
 
 // run it
-todoList.addTodo('boolean testing');
-VM2407 script.js:1 My Todos 
-[Object]
-0
-:
-Object
-completed
-:
-false
-todoText
-:
-"boolean testing"
-__proto__
-:
-Object
-length
-:
-1
-__proto__
-:
-Array(0)
-undefined
-todoList.toggleCompleted(0);
-VM2407 script.js:1 My Todos 
-[Object]
-0
-:
-Object
-completed
-:
-true
-todoText
-:
-"boolean testing"
-__proto__
-:
-Object
-length
-:
-1
-__proto__
-:
-Array(0)
+// todoList.addTodo('boolean testing');
+// VM2407 script.js:1 My Todos 
+// [Object]
+// 0
+// :
+// Object
+// completed
+// :
+// false
+// todoText
+// :
+// "boolean testing"
+// __proto__
+// :
+// Object
+// length
+// :
+// 1
+// __proto__
+// :
+// Array(0)
+// undefined
+// todoList.toggleCompleted(0);
+// VM2407 script.js:1 My Todos 
+// [Object]
+// 0
+// :
+// Object
+// completed
+// :
+// true
+// todoText
+// :
+// "boolean testing"
+// __proto__
+// :
+// Object
+// length
+// :
+// 1
+// __proto__
+// :
+// Array(0)
