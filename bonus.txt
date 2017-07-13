@@ -1,0 +1,4 @@
+To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program.
+
+version 1 BONUS:
+I upgraded the basic version of the program by adding console.log() after each operation to show the output on c9 terminal.

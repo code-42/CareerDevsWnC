@@ -6,13 +6,13 @@
 // change a todos
 // delete a todo
 
-// store todos
+// it should have a place to store todos
 var todos = ['item1','item2','item3'];
 
-// display todos
+// it should have a way to display todos
 console.log('My todos:', todos);
 
-// add new todos
+// it should have a way to add new todos
 todos.push('item 4');
 console.log('My todos:', todos);
 todos.push('item 5');
@@ -20,13 +20,13 @@ console.log('My todos:', todos);
 todos.push('new todo');
 console.log('My todos:', todos);
 
-// changing the first item
+// it should have a way to change a todo
 todos[0] = 'item 1 updated';
 console.log('My todos:', todos);
 todos[0] = 'changed!';
 console.log('My todos:', todos);
 
-// Deleteing the first item
+// it should have a way to delete a todo
 todos.splice(0,1);
 console.log('My todos:', todos);
 
