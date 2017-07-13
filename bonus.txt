@@ -1,4 +1,8 @@
 To gain bonus points, create a bonus.txt that describes how you upgraded the basic version of the program. Also create a new branch that contains a commit message re: your upgraded code. Push everything to github and share. Happy coding.
 
-BONUS:
+version 1 BONUS:
+I upgraded the basic version of the program by adding console.log() after each operation to show the output on c9 terminal.
+
+version 2 BONUS:
 In version 2, we upgraded the basic version of the program by writing functions to display todos, add, change and delete todos.
+
