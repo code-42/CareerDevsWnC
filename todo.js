@@ -1,34 +1,19 @@
-// version 4 - booleans
-// todoList.toggleCompleted should flip the completed property
-// add a new method called toggleCompleted
+// version 3 - objects
 var todoList = {
-  todos: [],
+  todos: ['item 1', 'item 2', 'item 3'],
   displayTodos: function(){
     console.log('My Todos', this.todos);
   },
-  addTodo: function(todoText){
-    this.todos.push({
-      todoText: todoText,
-      completed: false
-    });
+  addTodo: function(todo){
+    this.todos.push(todo);
     this.displayTodos();
   },
-// change parameter newValue to todoText
-  changeTodo: function(position, todoText){
-// change this.todos[position] = newValue; to a property on the object
-    this.todos[position].todoText = todoText;
+  changeTodo: function(position, newValue){
+    this.todos[position] = newValue;
     this.displayTodos();
   },
   deleteTodo: function(position){
     this.todos.splice(position,1);
     this.displayTodos();
-  },
-// add a new method called toggleCompleted
-// use ! to get the opposite of a boolean value
-  toggleCompleted: function(position){
-      var todo = this.todos[position];
-      todo.completed = !todo.completed;
-      this.displayTodos();
   }
 };
-
