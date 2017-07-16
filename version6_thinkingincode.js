@@ -1,22 +1,6 @@
-// version 3 - objects
-// var todoList = {
-//   todos: ['item 1', 'item 2', 'item 3'],
-//   displayTodos: function(){
-//     console.log('My Todos', this.todos);
-//   },
-//   addTodo: function(todo){
-//     this.todos.push(todo);
-//     this.displayTodos();
-//   },
-//   changeTodo: function(position, newValue){
-//     this.todos[position] = newValue;
-//     this.displayTodos();
-//   },
-//   deleteTodo: function(position){
-//     this.todos.splice(position,1);
-//     this.displayTodos();
-//   }
-// };
+// v6 requirements
+// .toggleAll: if everything is ture, make everything false
+// .toggleAll: otherwise, make everything true
 
 var todoList = {
   todos: [],
@@ -55,12 +39,37 @@ var todoList = {
       var todo = this.todos[position];
       todo.completed = !todo.completed;
       this.displayTodos();
+  },
+  toggleAll: function(){
+      var totalTodos = this.todos.length;
+      console.log("1.totalTodos == ", totalTodos);
+      var completedTodos = 0;
+      
+      // get the number of completed todos
+      for(var i = 0; i < totalTodos; i++){
+        if(this.todos[i].completed === true){
+            completedTodos++;
+        }
+      }
+      
+      // case 1: if everything is ture, make everything false
+      if(completedTodos === totalTodos){
+        //   console.log("2.totalTodos == ", totalTodos);
+          for(var i = 0; i < totalTodos; i++){
+            //   console.log("3.totalTodos == ", totalTodos);
+              this.todos[i].completed = false;
+          }
+      }
+      this.displayTodos();
   }
 };
 
 todoList.addTodo("add first todo");
 todoList.addTodo("add 2nd todo");
-todoList.addTodo("add third todo");
-todoList.changeTodo(1, "change second todo");
-todoList.addTodo("add thth todo");
-todoList.changeTodo(3, "add forrth todo");
+// todoList.addTodo("add third todo");
+// todoList.changeTodo(1, "change second todo");
+// todoList.addTodo("add thth todo");
+// todoList.changeTodo(3, "add forrth todo");
+todoList.toggleCompleted(0);
+todoList.toggleCompleted(1);
+todoList.toggleAll();
