@@ -1,6 +1,8 @@
-// v6 requirements
-// .toggleAll: if everything is ture, make everything false
-// .toggleAll: otherwise, make everything true
+// v7 requirements
+// there should be a "Display todos" button and a "Toggle all" button
+// clicking "Display todos" should run todoList.displayTodos
+// clicking "Toggle all" should run todoList.toggleAll
+
 
 var todoList = {
   todos: [],
@@ -65,14 +67,26 @@ var todoList = {
       }
       this.displayTodos();
   }
-}
+};
 
-todoList.addTodo("add first todo");
-todoList.addTodo("add 2nd todo");
-todoList.addTodo("add third todo");
+// 1. We want to get access to the display todos button.
+var displayTodosButton = document.getElementById('displayTodosButton');
+
+// 2. We want to run displayTodos method, when someone clicks the 
+// display todos button
+displayTodosButton.addEventListener('click', function(){
+  todoList.displayTodos();
+})
+
+
+// todoList.addTodo("add first todo");
+// todoList.addTodo("add 2nd todo");
+// todoList.addTodo("add third todo");
 // todoList.changeTodo(1, "change second todo");
 // todoList.addTodo("add thth todo");
 // todoList.changeTodo(3, "add forrth todo");
 todoList.toggleCompleted(0);
 todoList.toggleCompleted(1);
+todoList.toggleAll();
+todoList.toggleAll();
 todoList.toggleAll();
