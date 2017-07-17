@@ -42,7 +42,6 @@ var todoList = {
   },
   toggleAll: function(){
       var totalTodos = this.todos.length;
-      console.log("1.totalTodos == ", totalTodos);
       var completedTodos = 0;
       
       // get the number of completed todos
@@ -51,22 +50,26 @@ var todoList = {
             completedTodos++;
         }
       }
-      
-      // case 1: if everything is ture, make everything false
+      // case 1: if everything is true, make everything false
       if(completedTodos === totalTodos){
         //   console.log("2.totalTodos == ", totalTodos);
           for(var i = 0; i < totalTodos; i++){
             //   console.log("3.totalTodos == ", totalTodos);
               this.todos[i].completed = false;
           }
+      } else {
+          // case 2: otherwise, make everything true
+        for(var i = 0; i < totalTodos; i++){
+            this.todos[i].completed = true;  
+        }
       }
       this.displayTodos();
   }
-};
+}
 
 todoList.addTodo("add first todo");
 todoList.addTodo("add 2nd todo");
-// todoList.addTodo("add third todo");
+todoList.addTodo("add third todo");
 // todoList.changeTodo(1, "change second todo");
 // todoList.addTodo("add thth todo");
 // todoList.changeTodo(3, "add forrth todo");
