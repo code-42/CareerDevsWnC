@@ -1,24 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-// v5 requirements
-// .displayTodos should show .todoText
-// change the addTodo method so it adds objects instead of text to the todos array
-// .displayTodos should tell you if .todos is empty
-// .displayTodos should show .completed
-
-var todos = ['item 1', 'item 2', 'item 3'];
-=======
-// v6 requirements
-// .toggleAll: if everything is ture, make everything false
-// .toggleAll: otherwise, make everything true
->>>>>>> v6
-=======
 // v7 requirements
 // there should be a "Display todos" button and a "Toggle all" button
 // clicking "Display todos" should run todoList.displayTodos
 // clicking "Toggle all" should run todoList.toggleAll
 
->>>>>>> v7-htmlandthedom
 
 var todoList = {
   todos: [],
@@ -57,8 +41,6 @@ var todoList = {
       var todo = this.todos[position];
       todo.completed = !todo.completed;
       this.displayTodos();
-<<<<<<< HEAD
-=======
   },
   toggleAll: function(){
       var totalTodos = this.todos.length;
@@ -84,7 +66,6 @@ var todoList = {
         }
       }
       this.displayTodos();
->>>>>>> v6
   }
 };
 
@@ -104,8 +85,6 @@ toggleAllButton.addEventListener('click', function(){
 
 
 
-<<<<<<< HEAD
-=======
 todoList.addTodo("add first todo");
 todoList.addTodo("add 2nd todo");
 todoList.addTodo("add third todo");
@@ -115,9 +94,5 @@ todoList.addTodo("add third todo");
 todoList.toggleCompleted(0);
 todoList.toggleCompleted(1);
 todoList.toggleAll();
-<<<<<<< HEAD
->>>>>>> v6
-=======
 todoList.toggleAll();
 todoList.toggleAll();
->>>>>>> v7-htmlandthedom
