@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // v5 requirements
 // .displayTodos should show .todoText
 // change the addTodo method so it adds objects instead of text to the todos array
@@ -11,6 +12,13 @@ var todos = ['item 1', 'item 2', 'item 3'];
 // .toggleAll: if everything is ture, make everything false
 // .toggleAll: otherwise, make everything true
 >>>>>>> v6
+=======
+// v7 requirements
+// there should be a "Display todos" button and a "Toggle all" button
+// clicking "Display todos" should run todoList.displayTodos
+// clicking "Toggle all" should run todoList.toggleAll
+
+>>>>>>> v7-htmlandthedom
 
 var todoList = {
   todos: [],
@@ -78,7 +86,23 @@ var todoList = {
       this.displayTodos();
 >>>>>>> v6
   }
-}
+};
+
+// 1. We want to get access to the display todos button.
+var displayTodosButton = document.getElementById('displayTodosButton');
+var toggleAllButton = document.getElementById('toggleAllButton');
+// 2. We want to run displayTodos method, when someone clicks the 
+// display todos button
+displayTodosButton.addEventListener('click', function(){
+  todoList.displayTodos();
+})
+
+// add event listener for toggleAllButton
+toggleAllButton.addEventListener('click', function(){
+  todoList.toggleAll();
+})
+
+
 
 <<<<<<< HEAD
 =======
@@ -91,4 +115,9 @@ todoList.addTodo("add third todo");
 todoList.toggleCompleted(0);
 todoList.toggleCompleted(1);
 todoList.toggleAll();
+<<<<<<< HEAD
 >>>>>>> v6
+=======
+todoList.toggleAll();
+todoList.toggleAll();
+>>>>>>> v7-htmlandthedom
