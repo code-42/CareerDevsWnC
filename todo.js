@@ -3,10 +3,6 @@
 // clicking "Display todos" should run todoList.displayTodos
 // clicking "Toggle all" should run todoList.toggleAll
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d1807f2394957dd72aa3a6096431629cab365720
 var todoList = {
   todos: [],
   displayTodos: function(){
@@ -89,10 +85,6 @@ toggleAllButton.addEventListener('click', function(){
 })
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d1807f2394957dd72aa3a6096431629cab365720
 todoList.addTodo("add first todo");
 todoList.addTodo("add 2nd todo");
 todoList.addTodo("add third todo");
@@ -104,7 +96,3 @@ todoList.toggleCompleted(1);
 todoList.toggleAll();
 todoList.toggleAll();
 todoList.toggleAll();
-<<<<<<< HEAD
-=======
-
->>>>>>> d1807f2394957dd72aa3a6096431629cab365720
