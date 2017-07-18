@@ -1,4 +1,4 @@
-// v10 requirements
+// version 11
 
 var todoList = {
   todos: [],
@@ -40,7 +40,6 @@ var todoList = {
   }
 };
 
-// version 8 - our first refactoring
 var handlers = {
   addTodo: function(){
     var addTodoTextInput = document.getElementById('addTodoTextInput');
@@ -76,23 +75,6 @@ var view = {
   displayTodos: function(){
     var todosUl = document.querySelector('ul');
     todosUl.innerHTML = '';
-    // for (var i = 0; i < todoList.todos.length; i++){
-    //   var todoLi = document.createElement('li');
-    //   var todo = todoList.todos[i];
-    //   var todoTextWithCompletion = '';
-      
-    //   if(todo.completed === true){
-    //     todoTextWithCompletion = '(x) ' + todo.todoText;
-    //   } else {
-    //     todoTextWithCompletion = '( ) ' + todo.todoText;
-    //   }
-      
-    //   todoLi.id = i;
-    //   todoLi.textContent = todoTextWithCompletion;
-    //   todoLi.appendChild(this.createDeleteButton());
-    //   todosUl.appendChild(todoLi);  
-    // }
-    
     todoList.todos.forEach(function(todo, position){
       
       var todoLi = document.createElement('li');
@@ -136,16 +118,3 @@ var view = {
 }
 
 view.setUpEventListeners();
-
-// todoList.addTodo("add first todo");
-// todoList.addTodo("add 2nd todo");
-// todoList.addTodo("add third todo");
-// todoList.changeTodo(1, "change second todo");
-// todoList.addTodo("add thth todo");
-// todoList.changeTodo(3, "add forrth todo");
-// todoList.toggleCompleted(0);
-// todoList.toggleCompleted(1);
-// todoList.toggleAll();
-// todoList.toggleAll();
-// todoList.toggleAll();
-// view.displayTodos();
