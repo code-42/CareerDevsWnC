@@ -97,6 +97,17 @@ var handlers = {
   }
 }
 
+var view = {
+  displayTodos: function(){
+    var todosUl = document.querySelector('ul');
+    todosUl.innerHTML = '';
+    for (var i = 0; i < todoList.todos.length; i++){
+      var todoLi = document.createElement('li');
+      todosUl.appendChild(todoLi);  
+    }
+  }
+}
+
 todoList.addTodo("add first todo");
 todoList.addTodo("add 2nd todo");
 todoList.addTodo("add third todo");
@@ -108,3 +119,4 @@ todoList.toggleCompleted(1);
 todoList.toggleAll();
 todoList.toggleAll();
 todoList.toggleAll();
+view.displayTodos();
