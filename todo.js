@@ -1,4 +1,8 @@
-// v8 our first refactoring
+// v9 - escape from the console
+// v9 requirements:
+// there should be an li element for every todo
+// each li element should contain .todoText
+// each li element should show .completed
 
 var todoList = {
   todos: [],
@@ -103,7 +107,16 @@ var view = {
     todosUl.innerHTML = '';
     for (var i = 0; i < todoList.todos.length; i++){
       var todoLi = document.createElement('li');
-      todoLi.textContent = todoList.todos[i].todoText;
+      var todo = todoList.todos[i];
+      var todoTextWithCompletion = '';
+      
+      if(todo.completed === true){
+        todoTextWithCompletion = '(x) ' + todo.todoText;
+      } else {
+        todoTextWithCompletion = '( ) ' + todo.todoText;
+      }
+      
+      todoLi.textContent = todoTextWithCompletion;
       todosUl.appendChild(todoLi);  
     }
   }
