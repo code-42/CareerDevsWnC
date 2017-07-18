@@ -107,6 +107,11 @@ var view = {
   }
 }
 
+var todosUl = document.querySelector('ul');
+todosUl.addEventListener('click', function(event){
+  console.log(event.target.parentNode.id);
+})
+
 todoList.addTodo("add first todo");
 todoList.addTodo("add 2nd todo");
 todoList.addTodo("add third todo");
