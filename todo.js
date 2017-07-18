@@ -1,8 +1,4 @@
-// v9 - escape from the console
-// v9 requirements:
-// there should be an li element for every todo
-// each li element should contain .todoText
-// each li element should show .completed
+// v10 requirements
 
 var todoList = {
   todos: [],
@@ -100,6 +96,12 @@ var view = {
       todoLi.textContent = todoTextWithCompletion;
       todosUl.appendChild(todoLi);  
     }
+  },
+  createDeleteButton: function(){
+    var deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'deleteButton';
+    return deleteButton;
   }
 }
 
