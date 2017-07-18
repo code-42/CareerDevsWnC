@@ -108,6 +108,7 @@ var view = {
     todosUl.addEventListener('click', function(event){
     
       // get the element that was clicked on 
+      // aka event delegation
       var elementClicked = event.target;
       
       // check if elementClicked is a delete button
