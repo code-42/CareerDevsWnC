@@ -21,26 +21,22 @@ var todoList = {
   toggleAll: function(){
       var totalTodos = this.todos.length;
       var completedTodos = 0;
-      
-      // get the number of completed todos
-      for(var i = 0; i < totalTodos; i++){
-        if(this.todos[i].completed === true){
-            completedTodos++;
+
+      this.todos.forEach(function(todo){
+        if (todo.completed === true){
+          completedTodos++;
         }
-      }
-      // case 1: if everything is true, make everything false
-      if(completedTodos === totalTodos){
-        //   console.log("2.totalTodos == ", totalTodos);
-          for(var i = 0; i < totalTodos; i++){
-            //   console.log("3.totalTodos == ", totalTodos);
-              this.todos[i].completed = false;
-          }
-      } else {
-          // case 2: otherwise, make everything true
-        for(var i = 0; i < totalTodos; i++){
-            this.todos[i].completed = true;  
+      })
+
+      this.todos.forEach(function(todo){
+        // case 1: if everything is true, make everything false
+        if(completedTodos === totalTodos){
+          todo.completed = false;
+        } else {
+        // case 2: otherwise, make everything true
+          todo.completed = true;
         }
-      }
+      })
   }
 };
 
