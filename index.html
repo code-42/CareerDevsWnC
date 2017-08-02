@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
+    <link rel="stylesheet" href="resources/index.css">
 </head>
 <body>
-    <h1>Todo List</h1>
+    		<section id="todoapp">
+			<header id="header">
+    <h1>my Todo List</h1>
 
     <div>
         <button onclick="handlers.toggleAll()">Toggle All</button>
@@ -26,12 +29,19 @@
         <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
         <input id="toggleCompletedPositionInput" type="number">
     </div>
-    
+    <hr>
     <ul>
         
     </ul>
-    
-    <script type="text/javascript" src="todo.js"></script>
+
+			</header>
+			<section id="main">
+			</section>
+			<!--<footer id="footer">-->
+				<!--<ul></ul>-->
+			<!--</footer>-->
+		</section>
+    <script type="text/javascript" src="resources/todo.js"></script>
 </body>
 </html>
 
